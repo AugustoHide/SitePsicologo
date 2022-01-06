@@ -1,7 +1,7 @@
 .carousel-itens{
   height: 130vh;
-  background-color: black;
 }
+/* Carousel item 1 - Primeiro item: Apresentação */
 .carousel-item-1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_2996.JPG');
     background-size: cover;
@@ -12,7 +12,7 @@
 .carousel-item-1-content{
   position: relative;
   top: 57%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 }
 .carousel-item-1-content-1{
   color: white;
@@ -24,6 +24,7 @@
   font-family: Arial, sans-serif !important;
   padding-top: 20px;
 }
+/* Carousel item 2 - O que esperar da seção */
 .carousel-item-2{
   background-color: white;
   height: 130vh;
@@ -31,7 +32,7 @@
 .carousel-item-2-content-1{
   position: relative;
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   text-align: center;
   width: 10px;
 }
@@ -50,7 +51,32 @@
   height: 100vh;
   object-fit: cover;
 }
+/* Carousel item 3 - Formação Academica */
+.carousel-item-3{
 
+}
+.carousel-item-3-content{
+padding: 9rem 5rem;
+}
+.carousel-item-3-content-1{
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/IMG_3015.JPG');
+  border-radius: 10%;
+  height: 30rem;
+  box-shadow: 0px 0px 10px black;
+}
+.carousel-item-3-content-1-1{
+  object-position: 50% 50%;
+  border-radius: 50% / 70%;
+}
+.carousel-item-3-content-2{
+
+  
+  border: 1px solid red;
+}
+/* Footer */
 .footer-content{
   font-size: 0.87em;
 }
@@ -98,7 +124,7 @@
     font-size: 2.25rem;
     position: relative;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
   }
   .carousel-item-2-content-1{
     padding-top: 30vh;
