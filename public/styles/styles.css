@@ -124,6 +124,13 @@ padding: 9rem 5rem;
   box-shadow: 0px 0px 5px rgb(107, 107, 107);
   flex: 1 0 45%;
 }
+.carousel-item-4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/depressao.jpg');
+  background-size: cover;
+  background-position-y: center;
+  height: 130vh;
+  font-family: 'Playfair Display', serif;
+}
 /* Footer */
 .footer-content{
   font-size: 0.87em;
