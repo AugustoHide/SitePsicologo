@@ -128,8 +128,22 @@ padding: 9rem 5rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/depressao.jpg');
   background-size: cover;
   background-position-y: center;
+  background-position-x: center;
   height: 130vh;
   font-family: 'Playfair Display', serif;
+}
+.carousel-item-4-content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 130vh;
+  padding: 10rem 5rem;
+  color: black;
+}
+.carousel-item-4-content{
+  flex: 1 0 100%;
 }
 /* Footer */
 .footer-content{
