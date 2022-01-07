@@ -132,7 +132,7 @@ padding: 9rem 5rem;
   height: 130vh;
   font-family: 'Playfair Display', serif;
 }
-.carousel-item-4-content{
+.carousel-item-4-content, .carousel-item-5-content{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -140,11 +140,22 @@ padding: 9rem 5rem;
   justify-content: flex-end;
   height: 130vh;
   padding: 10rem 5rem;
+}
+.carousel-item-4-content-1{
   color: black;
 }
-.carousel-item-4-content{
-  flex: 1 0 100%;
+.carousel-item-5{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf.jpg');
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  height: 130vh;
+  font-family: 'Playfair Display', serif;
 }
+.carousel-item-5-content-1{
+  color: white;
+}
+
 /* Footer */
 .footer-content{
   font-size: 0.87em;
@@ -159,6 +170,10 @@ padding: 9rem 5rem;
   .carousel-item-2-content-2-1{
     height: 60vh;
     object-fit: cover;
+  }
+  .carousel-item-5{
+    background-position-y: bottom;
+    background-position-x: center;
   }
 }
 
@@ -203,6 +218,10 @@ padding: 9rem 5rem;
   .carousel-item-3-content-2-4{
     min-height: fit-content;
     border-radius: 0;
+  }
+  .carousel-item-5{
+    background-position-y: bottom;
+    background-position-x: center;
   }
 }
 
@@ -264,5 +283,9 @@ padding: 9rem 5rem;
     min-height: fit-content;
     border-radius: 0;
     flex: 1 0 100%;
+  }
+  .carousel-item-5{
+    background-position-y: bottom;
+    background-position-x: center;
   }
 }
