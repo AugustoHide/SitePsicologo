@@ -38,9 +38,13 @@
 }
 .carousel-item-2-content-1-1{
   padding-top: 0;
+  color: #f84545;
+  font-weight: 600;
 }
 .carousel-item-2-content-1-2{
   font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05rem;
+  font-weight: 450;
 }
 .carousel-item-2-content-2{
   margin-left: 50%;
@@ -64,13 +68,12 @@ padding: 9rem 5rem;
   background-size: cover;
   background-position: center;
   background-image: url('../images/IMG_3015.JPG');
-  border-radius: 5% /7%;
   height: 30rem;
   /* box-shadow: 0px 0px 10px black; */
 }
 .carousel-item-3-content-2{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -79,50 +82,37 @@ padding: 9rem 5rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
+  padding-bottom: 0.5rem;
 }
 .carousel-item-3-content-2-1{
-  min-height: 7rem;
+  min-height: 5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5% / 10%;
   margin: 2%;
   box-shadow: 0px 0px 5px rgb(107, 107, 107);
-  flex: 1 0 45%;
+  flex: 1 0 55%;
 }
 .carousel-item-3-content-2-2{
-  min-height: 7rem;
+  min-height: 5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5% / 10%;
   margin: 2%;
   box-shadow: 0px 0px 5px rgb(107, 107, 107);
-  flex: 1 0 45%;
+  flex: 1 0 55%;
 }
 .carousel-item-3-content-2-3{
-  min-height: 7rem;
+  min-height: 5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5% / 10%;
   margin: 2%;
   box-shadow: 0px 0px 5px rgb(107, 107, 107);
-  flex: 1 0 45%;
-}
-.carousel-item-3-content-2-4{
-  min-height: 7rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5% / 10%;
-  margin: 2%;
-  box-shadow: 0px 0px 5px rgb(107, 107, 107);
-  flex: 1 0 45%;
+  flex: 1 0 55%;
 }
 .carousel-item-4{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/depressao.jpg');
@@ -154,6 +144,8 @@ padding: 9rem 5rem;
 }
 .carousel-item-5-content-1{
   color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  padding: 1rem;
 }
 
 /* Footer */
@@ -194,7 +186,6 @@ padding: 9rem 5rem;
   }
   .carousel-item-3-content-1{
     height: 45vh;
-    border-radius: 7% / 13%;
     position: relative;
     top: -15vh;
   }
@@ -204,19 +195,15 @@ padding: 9rem 5rem;
     min-height: fit-content;
   }
   .carousel-item-3-content-2-1{
-    min-height: fit-content;
+    min-height: 4rem;
     border-radius: 0;
   }
   .carousel-item-3-content-2-2{
-    min-height: fit-content;
+    min-height: 4rem;
     border-radius: 0;
   }
   .carousel-item-3-content-2-3{
-    min-height: fit-content;
-    border-radius: 0;
-  }
-  .carousel-item-3-content-2-4{
-    min-height: fit-content;
+    min-height: 4rem;
     border-radius: 0;
   }
   .carousel-item-5{
@@ -255,7 +242,6 @@ padding: 9rem 5rem;
   }
   .carousel-item-3-content-1{
     height: 27.5vh;
-    border-radius: 7% / 13%;
     position: relative;
     top: -15vh;
   }
@@ -265,27 +251,23 @@ padding: 9rem 5rem;
     min-height: fit-content;
   }
   .carousel-item-3-content-2-1{
-    min-height: fit-content;
+    min-height: 4rem;
     border-radius: 0;
     flex: 1 0 100%;
   }
   .carousel-item-3-content-2-2{
-    min-height: fit-content;
+    min-height: 4rem;
     border-radius: 0;
     flex: 1 0 100%;
   }
   .carousel-item-3-content-2-3{
-    min-height: fit-content;
-    border-radius: 0;
-    flex: 1 0 100%;
-  }
-  .carousel-item-3-content-2-4{
-    min-height: fit-content;
+    min-height: 4rem;
     border-radius: 0;
     flex: 1 0 100%;
   }
   .carousel-item-5{
-    background-position-y: bottom;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf_Mobile.jpg');
+    background-size: fit-content;
+    background-position-y: 100%;
     background-position-x: center;
-  }
 }
