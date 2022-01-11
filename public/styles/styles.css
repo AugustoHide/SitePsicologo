@@ -277,7 +277,7 @@ padding: 9rem 5rem;
   .carousel-item-3-content-2-1{
     min-height: 4rem;
     border-radius: 0;
-    flex: 1 0 100%;
+    flex: 0 0 100%;
     box-shadow:
     1px 1px 0 1px #f9f9fb,
     -1px 0 28px 0 rgba(34, 33, 81, 0.01),
@@ -286,7 +286,7 @@ padding: 9rem 5rem;
   .carousel-item-3-content-2-2{
     min-height: 4rem;
     border-radius: 0;
-    flex: 1 0 100%;
+    flex: 0 0 100%;
     box-shadow:
     1px 1px 0 1px #f9f9fb,
     -1px 0 28px 0 rgba(34, 33, 81, 0.01),
@@ -295,7 +295,7 @@ padding: 9rem 5rem;
   .carousel-item-3-content-2-3{
     min-height: 4rem;
     border-radius: 0;
-    flex: 1 0 100%;
+    flex: 0 0 100%;
     box-shadow:
     1px 1px 0 1px #f9f9fb,
     -1px 0 28px 0 rgba(34, 33, 81, 0.01),
