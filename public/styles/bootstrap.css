@@ -4050,6 +4050,11 @@ textarea.form-control-lg {
   letter-spacing: 0.01rem;
   color: #fff;
 }
+@media (max-width: 576px){
+.navbar-brand{
+  padding-left: 0rem;
+}
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;
