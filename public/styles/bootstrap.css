@@ -4054,6 +4054,7 @@ textarea.form-control-lg {
 .navbar-brand{
   padding-left: 0rem;
   font-size: 1.75rem;
+  margin-right: 0;
 }
 }
 .navbar-nav {
