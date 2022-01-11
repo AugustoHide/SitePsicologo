@@ -4051,10 +4051,6 @@ textarea.form-control-lg {
   color: #fff;
 }
 @media (max-width: 576px){
-.navbar{
-  align-items: flex-end;
-  justify-content: end;
-}
 .navbar-brand{
   padding-left: 0rem;
   font-size: 1.75rem;
