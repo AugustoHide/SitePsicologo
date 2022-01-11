@@ -90,41 +90,9 @@ padding: 9rem 5rem;
   font-weight: 400;
   padding-bottom: 0.5rem;
 }
-@mixin transition-all {
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-	transition: all 200ms ease-in-out;
-}
-
-
-.persolizedBorder{
-  /* border-style: solid inset inset solid;
-  border-width: 1px 4px 6px 1px;
-  border-color: black grey black black;
-  background-color:#f4f5f6;
-  box-shadow:  -6px -20px 35px #ffffff, -6px -10px 15px #ffffff, -20px 0px 30px #ffffff, 6px 20px 25px rgba(0,0,0,0.2);
-  transform:translate3d(0px, 0px, 5px); */
-  transform:
-    scale(0.75)
-    rotateY(-30deg)
-    rotateX(45deg)
-    translateZ(4.5rem);
-  transform-origin: 50% 100%;
-  transform-style: preserve-3d;
-  box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
-  transition: 0.6s ease transform;
-}
-.persolizedBorder:hover {
-  transform: scale(1);
-}
-
-.persolizedBorder::before {
-  transform: translateZ(4rem);
-}
-
-.persolizedBorder::after {
-  transform: translateZ(-4rem);
+.tituloFonteMaior{
+  font-weight: 500;
+  font-size: 1.125rem;
 }
 .carousel-item-3-content-2-1{
   min-height: 5rem;
@@ -134,7 +102,7 @@ padding: 9rem 5rem;
   align-items: center;
   margin: 2%;
   box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
-  border: rgb(107, 107, 107) inset 3px;
+  border: rgb(107, 107, 107) inset 5px;
   flex: 1 0 55%;
 }
 .carousel-item-3-content-2-2{
@@ -145,7 +113,7 @@ padding: 9rem 5rem;
   align-items: center;
   margin: 2%;
   box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
-  border: rgb(107, 107, 107) inset 3px;
+  border: rgb(107, 107, 107) inset 5px;
   flex: 1 0 55%;
 }
 .carousel-item-3-content-2-3{
@@ -156,7 +124,7 @@ padding: 9rem 5rem;
   align-items: center;
   margin: 2%;
   box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
-  border: rgb(107, 107, 107) inset 3px;   
+  border: rgb(107, 107, 107) inset 5px;   
   flex: 1 0 55%;
 }
 .carousel-item-4{
@@ -322,3 +290,41 @@ padding: 9rem 5rem;
     display: none;
   }
 }
+
+/* 
+@mixin transition-all {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+.persolizedBorder{
+  border-style: solid inset inset solid;
+  border-width: 1px 4px 6px 1px;
+  border-color: black grey black black;
+  background-color:#f4f5f6;
+  box-shadow:  -6px -20px 35px #ffffff, -6px -10px 15px #ffffff, -20px 0px 30px #ffffff, 6px 20px 25px rgba(0,0,0,0.2);
+  transform:translate3d(0px, 0px, 5px);
+
+  transform:
+    scale(0.75)
+    rotateY(-30deg)
+    rotateX(45deg)
+    translateZ(4.5rem);
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
+  transition: 0.6s ease transform;
+}
+.persolizedBorder:hover {
+  transform: scale(1);
+}
+
+.persolizedBorder::before {
+  transform: translateZ(4rem);
+}
+
+.persolizedBorder::after {
+  transform: translateZ(-4rem);
+}
+ */
