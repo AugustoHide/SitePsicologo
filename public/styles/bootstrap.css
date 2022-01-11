@@ -4052,6 +4052,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 576px){
 .navbar{
+  align-items: flex-end;
   justify-content: end;
 }
 .navbar-brand{
