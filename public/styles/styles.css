@@ -263,20 +263,43 @@ padding: 9rem 5rem;
     top: -15vh;
     min-height: fit-content;
   }
+  .mobileShadow:hover {
+    transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+    transform:
+      translate3d(-5px, -10px, 0px);
+    box-shadow:
+      1px 1px 0 1px #f9f9fb,
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+  }
   .carousel-item-3-content-2-1{
     min-height: 4rem;
     border-radius: 0;
     flex: 1 0 100%;
+    box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    5px 8px 23px 0 rgba(34, 33, 81, 0.25);
   }
   .carousel-item-3-content-2-2{
     min-height: 4rem;
     border-radius: 0;
     flex: 1 0 100%;
+    box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    5px 8px 23px 0 rgba(34, 33, 81, 0.25);
   }
   .carousel-item-3-content-2-3{
     min-height: 4rem;
     border-radius: 0;
     flex: 1 0 100%;
+    box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    5px 8px 23px 0 rgba(34, 33, 81, 0.25);
   }
   .carousel-item-4-content, .carousel-item-5-content{
     padding: 15rem 4rem;
