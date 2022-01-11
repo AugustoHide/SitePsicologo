@@ -37,10 +37,8 @@
 }
 .carousel-item-2-content-1{
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 32.5%;
   text-align: center;
-  width: 10px;
 }
 .carousel-item-2-content-1-1{
   padding-top: 0;
@@ -53,13 +51,19 @@
   font-weight: 450;
 }
 .carousel-item-2-content-2{
-  margin-left: 50%;
   position: relative;
-  top: -20vh;
+  top: -15%;
+  margin-left: 50%;
+  padding-right: 10%;
+  
+  height: 30rem;
 }
 .carousel-item-2-content-2-1{
-  height: 100vh;
-  object-fit: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_3008.JPG');
+  background-size: cover;
+  background-position-y:center;
+  background-position-x: center;
+  height:100%;
 }
 /* Carousel item 3 - Formação Academica */
 .carousel-item-3{
@@ -140,7 +144,7 @@ padding: 9rem 5rem;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: center;
   height: 130vh;
   padding: 10rem 5rem;
 }
@@ -167,15 +171,32 @@ padding: 9rem 5rem;
 }
 
 @media (min-width: 768px) and (max-width: 992px){
-  .carousel-item-2-content-2{
-    margin-left: 50%;
-    position: relative;
-    top: -15vh;
+  .carousel-item-1{
+    background-position-x: 60%;
   }
-  .carousel-item-2-content-2-1{
-    height: 60vh;
-    object-fit: cover;
-  }
+  .carousel-item-2-content-1{
+  position: relative;
+  top: 32.5%;
+  text-align: center;
+}
+.carousel-item-2-content-1-1{
+  padding-top: 0;
+  color: #f84545;
+  font-weight: 600;
+}
+.carousel-item-2-content-1-2{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05rem;
+  font-weight: 450;
+}
+.carousel-item-2-content-2{
+  position: relative;
+  top: -15%;
+  margin-left: 50%;
+  padding-right: 10%;
+  
+  height: 30rem;
+}
   .carousel-item-5{
     background-position-y: bottom;
     background-position-x: center;
@@ -183,19 +204,30 @@ padding: 9rem 5rem;
 }
 
 @media (min-width: 576px) and (max-width: 768px){
+  .carousel-item-1{
+    background-position-x: 60%;
+  }
   .carousel-item-2-content-1{
-    margin-top: 30vh;
-    margin-left: 1rem;
+    position: relative;
+    top: 72.5%;
+    width: 80%;
+    margin: 0 10%;
+  }
+  .carousel-item-2-content-1-2{
+    line-height: 1;
   }
   .carousel-item-2-content-2{
     margin-left: auto;
     position: relative;
-    top: -85vh;
-    padding-top: 25vh;
+    top: -15%;
+    height: 60%;
+    width: 80%;
+    margin: 0 10%;
   }
   .carousel-item-2-content-2-1{
-    height: 60vh;
-    object-fit: cover;
+    margin-left: 6.5%;
+    height: 100%;
+    width: 100%;
   }
   .carousel-item-3-content-1{
     height: 45vh;
@@ -233,25 +265,29 @@ padding: 9rem 5rem;
   }
   .carousel-item-1{
     background-size: cover;
-    background-position-x: center;
-  }
-  .carousel-item-1-content{
-    font-size: 2.25rem;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    background-position-x: 60%;
   }
   .carousel-item-2-content-1{
-    padding-top: 30vh;
+    position: relative;
+    top: 45%;
+    width: 80%;
+    margin: 0 10%;
+  }
+  .carousel-item-2-content-1-2{
+    line-height: 1;
   }
   .carousel-item-2-content-2{
     margin-left: auto;
     position: relative;
-    top: -75vh;
+    top: -15%;
+    height: 30%;
+    width: 80%;
+    margin: 0 10%;
   }
   .carousel-item-2-content-2-1{
-    height: 40vh;
-    object-fit: cover;
+    margin-left: 6.5%;
+    height: 100%;
+    width: 100%;
   }
   .carousel-item-3-content-1{
     height: 27.5vh;
@@ -305,7 +341,14 @@ padding: 9rem 5rem;
     5px 8px 23px 0 rgba(34, 33, 81, 0.25);
   }
   .carousel-item-4-content, .carousel-item-5-content{
-    padding: 15rem 4rem;
+    width: 110%;
+    position: relative;
+    left: -5%;
+  }
+  .carousel-item-5-content{
+    width: 120%;
+    position: relative;
+    left: -10%;
   }
   .carousel-item-5{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf_Mobile.jpg');
