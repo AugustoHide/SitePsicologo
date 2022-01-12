@@ -3919,10 +3919,11 @@ textarea.form-control-lg {
 }
 
 .nav-link {
+  width: max-content;
   font-family: 'Playfair Display', serif !important;
   border-radius: 1rem;
   font-size: 1.25rem;
-  margin: 0 1rem;
+  margin: 0 0rem;
   display: block;
   padding: 0.25rem 1rem;
   color: #fff;
@@ -6343,6 +6344,8 @@ textarea.form-control-lg {
   width: 400px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
+  display: flex;
+  align-items: flex-end;
 }
 
 .offcanvas-top {
