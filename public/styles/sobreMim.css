@@ -1,0 +1,33 @@
+.sobreMim{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+}
+.sobreMimImgDiv{
+    width: 25%;
+    margin-left: 15%;
+
+}
+.sobreMimTextDiv{
+    width: 45%;
+    margin-right: 15%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+
+}
+.sobreMimImg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/sobremim.jpg');
+    background-size: cover;
+    background-position-x: 75%;
+    background-position-y: 50%;
+
+}
+.sobreMimTextTitle{
+    margin: 1rem 1rem;
+}
+.sobreMimTextItem{
+    margin: 1rem 1rem;
+}
