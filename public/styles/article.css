@@ -5,10 +5,19 @@
     align-items: center;
     justify-content: center;
 }
+#depressaoHeader{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/depressao.jpg');
+}
+#orentacaoProf{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/bifurcacao.jpg');
+    background-position-y: 75%;
+}
+#emConstrucao{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/emConstrucao.jpg');
+}
 .headerbackground{
     width: 90%;
     height: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/depressao.jpg');
     background-size: cover;
     background-position-x: 40%;
     background-position-y: 50%;
@@ -20,12 +29,14 @@
     color: white;
     text-align: center;
 }
+
 .headerMainTitle{
     margin: 1.5rem;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.2rem;
 }
 .articleDivider{
+    margin: 1rem 0;
     width: 90%;
     margin-left: 5%;
     height: 3px;
