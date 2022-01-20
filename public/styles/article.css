@@ -234,6 +234,9 @@
 }
 
 @media (max-width: 576px){
+    .cta-contato-item{
+        margin: 0;
+    }
     .sideLeft{
         width: 100%;
         flex-shrink: 0;
