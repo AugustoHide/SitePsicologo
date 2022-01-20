@@ -24,6 +24,10 @@ app.get('/orientacaoProfissional', (req, res) => {
     res.render('orientacaoProfissional');
 });
 
+app.get('/tcc', (req, res) => {
+    res.render('tcc');
+});
+
 app.get('/sobreMim', (req, res) => {
     res.render('sobreMim');
 });

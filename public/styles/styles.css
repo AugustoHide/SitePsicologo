@@ -180,6 +180,116 @@ padding: 9rem 5rem;
   color: rgb(150, 148, 148);
 }
 
+.article-section-text-img{
+  display: flex;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.a-s-t-i-text{
+  margin-left: 5%;
+  width: 45%;
+  padding-right: 1%;
+}
+
+.a-s-t-i-img{
+  margin-right: 5%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+#tcc1-img{
+  background-image: url('../images/tcc1.jpg');
+  background-position-y: 50%;
+  background-position-x: 50%;
+  min-height: 10rem;
+  max-height: 25rem;
+}
+
+.a-s-t-i-img-img{
+  background-size: cover;
+  background-position-y: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px){
+  .article-section-text-img{
+      padding: 2rem 10%;
+      flex-direction: column-reverse;
+  }
+  .a-s-t-i-text{
+      width: 100%;
+      margin: 0;
+  }
+  .a-s-t-i-img{
+      width: 100%;
+      margin: 0;
+      height: 30rem;
+  }
+  
+  #familia-img{
+      background-position-x: 50%;
+  }
+}
+
+/* ------------ ARTICLE-IMG-TEXT ------------ */
+.article-section-img-text{
+  padding: 3rem 0;
+  display: flex;
+}
+
+.a-s-i-t-img{
+  margin-left: 5%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding-right: 1%;
+}
+
+#tcc2-img{
+  background-image: url('../images/tcc2.jpg');
+  background-position-x: 90%;
+}
+
+.a-s-i-t-img-img{
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+}
+
+.a-s-i-t-text{
+  margin-right: 5%;
+  width: 45%;
+  padding-left: 1%;
+}
+
+@media (max-width: 768px){
+  .article-section-img-text{
+      padding: 2rem 10%;
+      flex-direction: column;
+  }
+  .a-s-i-t-text{
+      width: 100%;
+      margin: 0;
+  }
+  .a-s-i-t-img{
+      width: 100%;
+      margin: 0;
+      height: 30rem;
+  }
+  #crianca-img{
+      background-position-x: 75%;
+  }
+  #casal-img{
+      background-position-x: 100%;
+  }
+  #biomagnetismo-como-img{
+      background-position-x: 60%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px){
   .carousel-item-1{
     background-position-x: 60%;
