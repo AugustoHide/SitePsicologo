@@ -14,7 +14,7 @@
     margin-right: 15%;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-
+    max-width: 10px;
 }
 .sobreMimImg{
     width: 100%;

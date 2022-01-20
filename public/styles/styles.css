@@ -168,6 +168,15 @@ padding: 9rem 5rem;
 /* Footer */
 .footer-content{
   font-size: 0.87em;
+  color: rgb(105, 105, 105);
+}
+.footer-content > a {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+}
+.footer-content > a:hover {
+  text-decoration: none;
+  color: rgb(150, 148, 148);
 }
 
 @media (min-width: 768px) and (max-width: 992px){
