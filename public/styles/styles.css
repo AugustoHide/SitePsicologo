@@ -9,7 +9,7 @@
 }
 /* Carousel item 1 - Primeiro item: Apresentação */
 .carousel-item-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_2996-min.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_2996.jpg');
     background-size: cover;
     background-position-y: center;
     height: 130vh;
