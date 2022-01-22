@@ -3,30 +3,16 @@
         <div class="contatosMapaDiv">
             <div class="contatosMapaText">
                 <h3>Faça-nos uma Visita</h3>
-                <p>Rua Manoel Inácio de Souza, 208 - Sala 2</p>
+                <p>
+                <div class="contatosItem"><a class="contatoshover" href="https://goo.gl/maps/8PNyJhv3UWHNsJE76">Rua
+                        Manoel
+                        Inácio de Souza, 208 - Sala 2</a>
+                </div>
+                </p>
                 <p>Centro. Ao lado do Colégio Bionatos.</p>
             </div>
-            <div class="contatosMapa" id="map"></div>
-            <script>
-                function initMap() {
-                    const clinica = new google.maps.LatLng(-20.455778, -54.600889);
-                    const map = new google.maps.Map(document.getElementById("map"), {
-                        center: clinica,
-                        zoom: 17,
-                    });
+            <div class="contatosMapa"></div>
 
-                    let marker = new google.maps.Marker({
-                        position: clinica,
-                        map: map
-                    });
-
-                    let infoWindow = new google.map.InfoWindow({ content: '<h5>Antonio Sergio</h5>' });
-
-                    marker.addEventListener('click', function () {
-                        infoWindow.open(map, marker);
-                    });
-                };
-            </script>
         </div>
         <div class="contatosContatosDiv">
             <div class="contatosItem">
