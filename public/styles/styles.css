@@ -9,7 +9,7 @@
 }
 /* Carousel item 1 - Primeiro item: Apresentação */
 .carousel-item-1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_2996.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_2996-min.JPG');
     background-size: cover;
     background-position-y: center;
     height: 130vh;
@@ -59,7 +59,7 @@
   height: 30rem;
 }
 .carousel-item-2-content-2-1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_3008.JPG');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_3008-min.JPG');
   background-size: cover;
   background-position-y:center;
   background-position-x: center;
@@ -77,7 +77,7 @@ padding: 9rem 5rem;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url('../images/IMG_3015.JPG');
+  background-image: url('../images/IMG_3015-min.JPG');
   height: 30rem;
   /* box-shadow: 0px 0px 10px black; */
 }
@@ -132,7 +132,7 @@ padding: 9rem 5rem;
   flex: 1 0 55%;
 }
 .carousel-item-4{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/depressao.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/depressao-min.jpg');
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -152,7 +152,7 @@ padding: 9rem 5rem;
   color: black;
 }
 .carousel-item-5{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf-min.jpg');
   background-size: cover;
   background-position-y: bottom;
   background-position-x: center;
@@ -200,7 +200,7 @@ padding: 9rem 5rem;
 }
 
 #tcc1-img{
-  background-image: url('../images/tcc1.jpg');
+  background-image: url('../images/tcc1-min.jpg');
   background-position-y: 50%;
   background-position-x: 50%;
   min-height: 10rem;
@@ -249,7 +249,7 @@ padding: 9rem 5rem;
 }
 
 #tcc2-img{
-  background-image: url('../images/tcc2.jpg');
+  background-image: url('../images/tcc2-min.jpg');
   background-position-x: 90%;
 }
 
@@ -471,7 +471,7 @@ padding: 9rem 5rem;
     left: -10%;
   }
   .carousel-item-5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf_Mobile.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf_Mobile-min-min.jpg');
     background-size: fit-content;
     background-position-y: bottom;
     background-position-x: center;

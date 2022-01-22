@@ -6,16 +6,16 @@
     justify-content: center;
 }
 #depressaoHeader{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/conversation.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/conversation-min.jpg');
     background-position-y: 30%;
     background-position-x: 60%;
 }
 #orentacaoProf{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/bifurcacao.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/bifurcacao-min.jpg');
     background-position-y: 75%;
 }
 #emConstrucao{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/emConstrucao.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../images/emConstrucao-min.jpg');
 }
 .headerbackground{
     width: 90%;
@@ -137,7 +137,7 @@
     width: 89%;
     margin-left: 1%;
     height: 100%;
-    background-image: url('../images/conversation.jpg');
+    background-image: url('../images/conversation-min.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -146,7 +146,7 @@
     width: 90%;
     margin-left: 10%;
     height: 100%;
-    background-image: url('../images/orietacaoProf2.jpg');
+    background-image: url('../images/orietacaoProf2-min-min.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 50%;
