@@ -1,7 +1,8 @@
-const mongoSanitize = require('express-mongo-sanitize');
 const express = require('express');
 const app = express();
 
+const mongoSanitize = require('express-mongo-sanitize');
+const helmet = require('helmet');
 const ejsMate = require('ejs-mate');
 const path = require('path');
 
@@ -12,6 +13,7 @@ app.set('views', viewPath);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
+app.use(helmet({ contentSecurityPolicy: false }));
 
 
 app.get('/', (req, res) => {
@@ -44,10 +46,10 @@ app.get('/contato', (req, res) => {
     res.render('contato', { pagina });
 });
 
-app.get('/logo', (req, res) => {
-    const pagina = 'Logo';
-    res.render('logo', { pagina });
-});
+app.all('*', (req, res) => {
+    const pagina = 'Página Não Encontrada';
+    res.render('notFound', { pagina });
+})
 
 
 const port = process.env.PORT || 3000;
