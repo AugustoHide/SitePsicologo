@@ -6303,7 +6303,7 @@ textarea.form-control-lg {
   z-index: 1045;
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: fit-content;
   visibility: hidden;
   background-color: #fff;
   background-clip: padding-box;

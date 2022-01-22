@@ -1,3 +1,4 @@
+const mongoSanitize = require('express-mongo-sanitize');
 const express = require('express');
 const app = express();
 
@@ -10,34 +11,42 @@ const viewPath = path.join(__dirname, '/views');
 app.set('views', viewPath);
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(mongoSanitize());
 
 
 app.get('/', (req, res) => {
-    res.render('paginaInicial');
+    const pagina = 'Home';
+    res.render('paginaInicial', { pagina });
 });
 
 app.get('/depressao', (req, res) => {
-    res.render('depressao');
+    const pagina = 'Transtorno Depressivo';
+    res.render('depressao', { pagina });
 });
 
 app.get('/orientacaoProfissional', (req, res) => {
-    res.render('orientacaoProfissional');
+    const pagina = 'Orientação Profissional';
+    res.render('orientacaoProfissional', { pagina });
 });
 
 app.get('/tcc', (req, res) => {
-    res.render('tcc');
+    const pagina = 'Terapia Coginitivo-Comportamental';
+    res.render('tcc', { pagina });
 });
 
 app.get('/sobreMim', (req, res) => {
-    res.render('sobreMim');
+    const pagina = 'Sobre Mim';
+    res.render('sobreMim', { pagina });
 });
 
 app.get('/contato', (req, res) => {
-    res.render('contato');
+    const pagina = 'Contatos';
+    res.render('contato', { pagina });
 });
 
 app.get('/logo', (req, res) => {
-    res.render('logo');
+    const pagina = 'Logo';
+    res.render('logo', { pagina });
 });
 
 

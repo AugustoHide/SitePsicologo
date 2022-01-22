@@ -16,47 +16,58 @@
     font-family: 'Playfair Display', serif;
   }
 .carousel-item-1-content{
-  position: relative;
-  top: 57%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .carousel-item-1-content-1{
   color: white;
   font-weight: 400;
   font-size: 2.25rem;
+  text-align: center;
 }
 .carousel-item-1-content-2{
   font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
   font-family: Arial, sans-serif !important;
-  padding-top: 20px;
 }
 /* Carousel item 2 - O que esperar da seção */
 .carousel-item-2{
   background-color: white;
   height: 130vh;
 }
+
+.carousel-item-2-content{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 130vh;
+}
+
 .carousel-item-2-content-1{
-  position: relative;
-  top: 32.5%;
   text-align: center;
+  width: 30%;
+  margin-left: 20%;
+  padding-right: 1%;
 }
 .carousel-item-2-content-1-1{
-  padding-top: 0;
   color: #f84545;
   font-weight: 600;
 }
 .carousel-item-2-content-1-2{
   font-family: 'Playfair Display', serif;
-  letter-spacing: 0.05rem;
-  font-weight: 450;
+  font-weight: 500;
 }
 .carousel-item-2-content-2{
-  position: relative;
-  top: -15%;
-  margin-left: 50%;
-  padding-right: 10%;
-  
-  height: 30rem;
+  width: 30%;
+  margin-right: 20%;
+  height: 25rem;
 }
 .carousel-item-2-content-2-1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_3008-min.JPG');
@@ -146,7 +157,7 @@ padding: 9rem 5rem;
   align-items: flex-start;
   justify-content: center;
   height: 130vh;
-  padding: 10rem 5rem;
+  padding: 0 5rem;
 }
 .carousel-item-4-content-1{
   color: black;
@@ -163,6 +174,29 @@ padding: 9rem 5rem;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   padding: 1rem;
+}
+
+.carousel-item-6{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/IMG_3023-min.JPG');
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  height: 130vh;
+  font-family: 'Playfair Display', serif;
+}
+
+.carousel-item-6-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:end;
+  padding-bottom: 12.5%;
+  color: white;
+}
+
+.carousel-6-content-2{
+  justify-self:end;
 }
 
 /* Footer */
@@ -300,31 +334,20 @@ padding: 9rem 5rem;
     background-position-x: 60%;
   }
   .carousel-item-2-content-1{
-  position: relative;
-  top: 32.5%;
-  text-align: center;
-}
-.carousel-item-2-content-1-1{
-  padding-top: 0;
-  color: #f84545;
-  font-weight: 600;
-}
-.carousel-item-2-content-1-2{
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.05rem;
-  font-weight: 450;
-}
-.carousel-item-2-content-2{
-  position: relative;
-  top: -15%;
-  margin-left: 50%;
-  padding-right: 10%;
-  
-  height: 30rem;
-}
+    width: 40%;
+    margin-left: 10%;
+  }
+  .carousel-item-2-content-2{
+    width: 40%;
+    margin-right: 10%;
+  }
   .carousel-item-5{
     background-position-y: bottom;
     background-position-x: center;
+  }
+  .carousel-item-6-content{
+    height: 100%;
+    margin: 0 10%;
   }
 }
 
@@ -332,27 +355,23 @@ padding: 9rem 5rem;
   .carousel-item-1{
     background-position-x: 60%;
   }
+  .carousel-item-2-content{
+    flex-direction: column-reverse;
+  }
   .carousel-item-2-content-1{
-    position: relative;
-    top: 72.5%;
     width: 80%;
     margin: 0 10%;
-  }
-  .carousel-item-2-content-1-2{
-    line-height: 1;
+    padding-right: 0;
+    padding-top: 1%;
   }
   .carousel-item-2-content-2{
-    margin-left: auto;
-    position: relative;
-    top: -15%;
-    height: 60%;
     width: 80%;
     margin: 0 10%;
+    padding-right: 0;
+    height: 22.5rem;
   }
   .carousel-item-2-content-2-1{
-    margin-left: 6.5%;
-    height: 100%;
-    width: 100%;
+    background-position-y: 40%;
   }
   .carousel-item-3-content-1{
     height: 45vh;
@@ -380,6 +399,14 @@ padding: 9rem 5rem;
     background-position-y: bottom;
     background-position-x: center;
   }
+  .carousel-item-6{
+    background-position-y: bottom;
+    background-position-x: 60%;
+  }
+  .carousel-item-6-content{
+    height: 100%;
+    margin: 0 10%;
+  }
 }
 
 @media (max-width: 576px){
@@ -392,27 +419,30 @@ padding: 9rem 5rem;
     background-size: cover;
     background-position-x: 60%;
   }
+  .carousel-item-1-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-item-2-content{
+    flex-direction: column-reverse;
+    height: 80%;
+  }
   .carousel-item-2-content-1{
-    position: relative;
-    top: 45%;
     width: 80%;
     margin: 0 10%;
-  }
-  .carousel-item-2-content-1-2{
-    line-height: 1.12;
+    padding-right: 0;
+    padding-top: 5%;
   }
   .carousel-item-2-content-2{
-    margin-left: auto;
-    position: relative;
-    top: -15%;
-    height: 30%;
-    width: 80%;
-    margin: 0 10%;
+    width: 60%;
+    margin: 0 20%;
+    padding-right: 0;
+    height: 15rem;
   }
   .carousel-item-2-content-2-1{
-    margin-left: 6.5%;
-    height: 100%;
-    width: 100%;
+    background-position-y: 40%;
   }
   .carousel-item-3-content-1{
     height: 27.5vh;
@@ -466,14 +496,10 @@ padding: 9rem 5rem;
     5px 8px 23px 0 rgba(34, 33, 81, 0.25);
   }
   .carousel-item-4-content, .carousel-item-5-content{
-    width: 110%;
-    position: relative;
-    left: -5%;
-  }
-  .carousel-item-5-content{
-    width: 120%;
-    position: relative;
-    left: -10%;
+    height: 85%;
+    width: 85%;
+    padding: 0;
+    margin: 0 7.5%;
   }
   .carousel-item-5{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf_Mobile-min-min.jpg');
@@ -481,6 +507,20 @@ padding: 9rem 5rem;
     background-position-y: bottom;
     background-position-x: center;
   }.hideMobile{
+    display: none;
+  }
+  .carousel-item-6{
+    background-position-y: bottom;
+    background-position-x: 60%;
+  }
+  .carousel-item-6-content{
+    height: 80%;
+    margin: 0 10%;
+  }
+}
+
+@media (max-width: 330px){
+  .carousel-item-2-content-2-1{
     display: none;
   }
 }
