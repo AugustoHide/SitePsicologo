@@ -36,6 +36,10 @@ app.get('/contato', (req, res) => {
     res.render('contato');
 });
 
+app.get('/logo', (req, res) => {
+    res.render('logo');
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
