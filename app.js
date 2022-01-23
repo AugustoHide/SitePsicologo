@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+const compression = require('compression');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const ejsMate = require('ejs-mate');
@@ -15,7 +16,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 app.use(helmet({ contentSecurityPolicy: false }));
 
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
+app.use(compression());
 
 app.use((req, res, next) => { //Cria um middleware onde todas as requests passam por ele
     if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) //Checa se o protocolo informado nos headers é HTTP
