@@ -212,6 +212,10 @@ padding: 9rem 5rem;
 .footer-content{
   font-size: 0.87em;
   color: rgb(105, 105, 105);
+  --bs-bg-opacity: 1;
+  padding: 1rem !important;
+  text-align: center !important;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 .footer-content > a {
   text-decoration: none;
