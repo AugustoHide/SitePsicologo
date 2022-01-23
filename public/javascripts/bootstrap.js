@@ -3253,13 +3253,7 @@
         Carousel,
         Collapse,
         Dropdown,
-        Modal,
-        Offcanvas,
-        Popover,
-        ScrollSpy,
-        Tab,
-        Toast,
-        Tooltip
+        Offcanvas
     };
 
     return index_umd;
