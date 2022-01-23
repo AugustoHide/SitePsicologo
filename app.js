@@ -54,9 +54,8 @@ app.get('/contato', (req, res) => {
     res.render('contato', { pagina });
 });
 
-app.get('/robots.txt', function (req, res) {
-    res.type('text/plain');
-    res.send("User-agent: *\nAllow: /");
+app.get('/robots.txt', (req, res) => {
+    res.sendFile('robots.txt');
 });
 
 app.all('*', (req, res) => {
