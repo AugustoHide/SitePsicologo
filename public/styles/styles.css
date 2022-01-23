@@ -13,15 +13,25 @@
 }
 .carousel-itens{
   height: 130vh;
+  background-color: black;
 }
 /* Carousel item 1 - Primeiro item: Apresentação */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes title-gon-down {
+  from {transform: translateY(-100px);}
+  to {transform: translateY(0);}
+}
 .carousel-item-1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/IMG_2996.jpg');
     background-size: cover;
     background-position-y: center;
     height: 130vh;
     font-family: 'Playfair Display', serif;
-  }
+    animation: fadein ease-in-out 2s;
+}
 .carousel-item-1-content{
   display: flex;
   flex-direction: column;
@@ -29,6 +39,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  animation: title-gon-down 1.75s;
 }
 .carousel-item-1-content-1{
   color: white;
@@ -88,6 +99,7 @@
 .carousel-item-3{
   /* background-image: linear-gradient(rgb(14, 14, 75), rgba(25, 25, 112, 1)); */
   font-family: 'Playfair Display', serif;
+  background-color: white;
 }
 .carousel-item-3-content{
   display: flex;
@@ -158,6 +170,17 @@
   border: rgb(107, 107, 107) inset 5px;   
   flex: 1 0 55%;
 }
+@keyframes up-down {
+  from { margin-top: 130vh;}
+  to   { margin-top: 0;}
+}
+@keyframes opacity {
+  from { opacity: 0;}
+  to   { opacity: 1;}
+}
+.carousel-item-4{
+  background-color: black;
+}
 .carousel-item-4{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/depressao-min.jpg');
   background-size: cover;
@@ -165,6 +188,7 @@
   background-position-x: center;
   height: 130vh;
   font-family: 'Playfair Display', serif;
+  animation: opacity 4s;
 }
 .carousel-item-4-content, .carousel-item-5-content{
   display: flex;
@@ -175,9 +199,18 @@
   height: 130vh;
   padding: 0 5rem;
   width: 60%;
+  /* animation: down-up 3s; */
 }
 .carousel-item-4-content-1{
   color: black;
+}
+@keyframes down-up {
+  from { margin-top: -130vh; }
+  to   { margin-top: 0; }
+}
+@keyframes go-back {
+  from {opacity: 0; background-position-y: top;}
+  to {opacity: 1; background-position-y: bottom;}
 }
 .carousel-item-5{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf-min.jpg');
@@ -186,11 +219,13 @@
   background-position-x: center;
   height: 130vh;
   font-family: 'Playfair Display', serif;
+  animation: go-back 2.5s;
 }
 .carousel-item-5-content-1{
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   padding: 1rem;
+  animation: opacity 2s;
 }
 
 .carousel-item-6{
