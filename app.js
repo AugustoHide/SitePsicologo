@@ -15,6 +15,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 app.use(helmet({ contentSecurityPolicy: false }));
 
+app.use(express.urlencoded({ extended: true }))
+
+app.use((req, res, next) => { //Cria um middleware onde todas as requests passam por ele
+    if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) //Checa se o protocolo informado nos headers é HTTP
+        res.redirect(`https://${req.hostname}${req.url}`); //Redireciona pra HTTPS
+    else //Se a requisição já é HTTPS
+        next(); //Não precisa redirecionar, passa para os próximos middlewares que servirão com o conteúdo desejado
+});
 
 app.get('/', (req, res) => {
     const pagina = 'Home';
@@ -44,6 +52,11 @@ app.get('/sobreMim', (req, res) => {
 app.get('/contato', (req, res) => {
     const pagina = 'Contatos';
     res.render('contato', { pagina });
+});
+
+app.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nAllow: /");
 });
 
 app.all('*', (req, res) => {
