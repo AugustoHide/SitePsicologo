@@ -254,6 +254,7 @@
   background-position-x: center;
   height: 130vh;
   font-family: 'Playfair Display', serif;
+  animation: tranparente 2s, fadein 3s;
 }
 
 .carousel-item-6-content{
