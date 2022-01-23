@@ -209,8 +209,8 @@
   to   { margin-top: 0; }
 }
 @keyframes go-back {
-  from {opacity: 0; background-position-y: top;}
-  to {opacity: 1; background-position-y: bottom;}
+  from {opacity: 0; background-position-y: top; margin-top: 65vh;}
+  to {opacity: 1; background-position-y: bottom; margin-top: 0;}
 }
 .carousel-item-5{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/orientacaoProf-min.jpg');
