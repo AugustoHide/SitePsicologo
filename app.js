@@ -60,6 +60,10 @@ app.get('/robots.txt', (req, res) => {
     res.sendFile('robots.txt');
 });
 
+app.get('/sitemap.xml', (req, res) => {
+    res.sendFile('sitemap.xml');
+});
+
 app.all('*', (req, res) => {
     const pagina = 'Página Não Encontrada';
     res.render('notFound', { pagina });
