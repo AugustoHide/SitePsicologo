@@ -26,6 +26,17 @@ app.use((req, res, next) => { //Cria um middleware onde todas as requests passam
         next(); //Não precisa redirecionar, passa para os próximos middlewares que servirão com o conteúdo desejado
 });
 
+function wwwRedirect(req, res, next) {
+    if (req.headers.host.slice(0, 4) === 'www.') {
+        var newHost = req.headers.host.slice(4);
+        return res.redirect(301, req.protocol + '://' + newHost + req.originalUrl);
+    }
+    next();
+};
+
+app.set('trust proxy', true);
+app.use(wwwRedirect);
+
 app.get('/', (req, res) => {
     const pagina = 'Home';
     res.render('paginaInicial', { pagina });
